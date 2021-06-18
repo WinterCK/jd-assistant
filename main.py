@@ -9,7 +9,7 @@ if __name__ == '__main__':
     """
 # ps5 https://item.m.jd.com/product/100021367452.html?wxa_abtest=o&
     # 小冰箱 10027528612196, xbox : 10024207425834
-    sku_ids = '10024207425834'  # 商品id
+    sku_ids = '100021367452'  # 商品id 100021367452
     area = '19_1607_3155'  # 区域id
     asst = Assistant()  # 初始化
     asst.login_by_QRcode()  # 扫码登陆
@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     # 定时秒杀模式, 需要时开启, 对cpu负担相对增大
 
-    asst.buy_item_sec_kill(times="2021-6-17 20:15:59.000000", sku_ids=sku_ids, area=area, submit_retry=5, submit_interval=0.5)
+    # asst.buy_item_sec_kill(times="2021-6-18 10:00:00.000000", sku_ids=sku_ids, area=area, submit_retry=5, submit_interval=1)
 
 
-    # asst.exec_seckill_by_time(sku_ids=sku_ids, buy_time="2021-6-18 10:00:00.000000")
+    asst.exec_seckill_by_time(sku_ids=sku_ids, buy_time="2021-6-18 10:00:00.000000", retry=4, interval=2)
