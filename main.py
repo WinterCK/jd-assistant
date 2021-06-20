@@ -9,7 +9,8 @@ if __name__ == '__main__':
     """
 # ps5 https://item.m.jd.com/product/100021367452.html?wxa_abtest=o&
     # 小冰箱 10027528612196, xbox : 10024207425834
-    sku_ids = '100021367452'  # 商品id 100021367452
+    # 茅台: 100012043978
+    sku_ids = '100012043978'  # 商品id 100021367452
     area = '19_1607_3155'  # 区域id
     asst = Assistant()  # 初始化
     asst.login_by_QRcode()  # 扫码登陆
